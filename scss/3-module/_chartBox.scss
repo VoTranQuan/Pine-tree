@@ -1,0 +1,18 @@
+.chart-overview {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+    .chart-box {
+        flex-grow: 1;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: .2em;
+
+        .chart-data {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

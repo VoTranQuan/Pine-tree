@@ -1,0 +1,375 @@
+.q-navigation {
+    display: flex;
+    padding: 15px;
+    padding-bottom: 0;
+    position: relative;
+    justify-items: center;
+    justify-content: space-between;
+    border: 1px solid $border-color;
+    border-bottom: 3px solid $main-color;
+}
+
+.search-box {
+    input[type='search'] {
+        border: 1px solid $main-color;
+        border-radius: 15px;
+        padding: 5px 45px 5px 15px;
+        margin: 0;
+
+        &:focus {
+            box-shadow: 0 0 20px $main-color;
+        }
+    }
+
+    button[type='submit'] {
+        border: none;
+        background-color: transparent;
+        padding: 5px 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: -40px;
+        outline: none;
+        box-shadow: none;
+
+        span {
+            color: $text-color;
+            z-index: 9999;
+            font-size: 12px;
+        }
+    }
+}
+
+
+.create-form {
+    form {
+        display: flex;
+
+        input[type='text'] {
+            border: none;
+            outline: unset;
+            border-radius: 3px;
+            margin-right: 1rem;
+            padding: 5px 10px;
+
+            &:focus {
+                box-shadow: 0 0 20px $main-color;
+            }
+        }
+
+        button[type='submit'] {
+            background-color: rgba($color: $third-bg-color, $alpha: .25);
+            border: none;
+            border-radius: 3px;
+
+            i {
+                font-weight: bolder;
+            }
+
+            &:hover {
+                background-color: $main-color;
+
+                i {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+.nav-secondary {
+    .menu {
+        .dropdown {
+            .sub-menu {
+                right: 0;
+                left: unset;
+
+                li {
+                    i {
+                        color: $text-color;
+                        margin-right: 2px;
+                    }
+
+                    &:hover {
+                        i {
+                            color: $main-color;
+                        }
+
+                        a {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    .dropdown {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        padding: 10px;
+        padding-right: 30px;
+        border: 1px solid $main-color;
+        border-bottom: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        background: rgba($color: $main-color, $alpha: 0.25);
+
+        &.active {
+            background: $main-color;
+
+            >a {
+                padding: 10px;
+                color: $text-color;
+                position: relative;
+                z-index: 999;
+            }
+        }
+
+        &:hover {
+            background: rgba($color: $main-color, $alpha: 0.5);
+
+            >ul {
+                display: inline-block;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            border-top: 5px solid $text-color;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: none;
+            z-index: 10001;
+            opacity: .75;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        a {
+            color: $text-color;
+        }
+
+        i {
+            color: $text-color;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: $main-bg-color;
+            min-width: 200px;
+            z-index: 1000;
+
+            &.sub-menu {
+                top: 100%;
+                left: 0;
+                box-shadow: 0 10px 10px black;
+                border-top: 3px solid $main-color;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                li {
+                    padding: 1em 1.5em;
+
+                    &:hover {
+                        background-color: rgba($color: $secondary-bg-color, $alpha: .5);
+                    }
+
+                    &.divider {
+                        padding: 0;
+                        border-top: 1px solid $main-color;
+                        margin: .5rem auto .5rem;
+                        cursor: default;
+                        opacity: .3;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        color: white;
+                        line-height: 1.75;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.q-menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 5px 10px;
+        display: inline-block;
+    }
+
+    img {
+        vertical-align: middle;
+        margin-right: .2rem;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        padding: 10px;
+        padding-right: 30px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            background: rgba($color: $main-color, $alpha: 0.5);
+
+            >ul {
+                display: inline-block;
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: $main-bg-color;
+            min-width: 120px;
+            z-index: 1000;
+
+            &.sub-menu {
+                top: 100%;
+                left: 0;
+                box-shadow: 0 10px 10px black;
+                border-top: 3px solid $main-color;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                li {
+                    padding: 1em 1.5em;
+                    display: block;
+
+                    &:hover {
+                        background-color: rgba($color: $secondary-bg-color, $alpha: .5);
+                    }
+
+                    a {
+                        display: block;
+                        color: white;
+                        line-height: 1.75;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: .8em 1.5em;
+        display: inline-block;
+        border-right: 1px solid rgba($color: $secondary-bg-color, $alpha: .5) !important;
+
+        a {
+            color: $text-color;
+            letter-spacing: 1px;
+        }
+
+        &.active {
+            background: $main-color;
+        }
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        padding: 10px;
+        padding-right: 30px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            background: rgba($color: $main-color, $alpha: 0.5);
+
+            >ul {
+                display: inline-block;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            border-top: 5px solid $text-color;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: none;
+            z-index: 10001;
+            opacity: .75;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: $main-bg-color;
+            min-width: 300px;
+            z-index: 99999;
+
+            &.sub-menu {
+                top: 100%;
+                left: 0;
+                box-shadow: 0 10px 10px black;
+                border-top: 3px solid $main-color;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                li {
+                    padding: 1em 1.5em;
+                    display: block;
+
+                    &:hover {
+                        background-color: rgba($color: $secondary-bg-color, $alpha: .5);
+                    }
+
+                    a {
+                        display: block;
+                        color: $text-color;
+                        line-height: 1.75;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

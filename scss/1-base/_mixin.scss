@@ -1,0 +1,147 @@
+@mixin font($name, $src) {
+    @font-face {
+        font-family: $name;
+        src: url('/dist/fonts/'+ $src + '.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@mixin btn($background-color, $text-color, $border, $border-radius) {
+    background-color: $background-color;
+    color: $text-color;
+
+    a {
+        color: $text-color;
+    }
+
+    i {
+        color: $text-color;
+    }
+
+    border: $border;
+    border-radius: $border-radius;
+}
+
+
+@mixin mq($breakpoint) {
+
+    $mq-xs: "(max-width: 767px)";
+    $mq-sm: "(min-width: 768px) and (max-width: 991px)";
+    $mq-md: "(min-width: 992px) and (max-width: 1199px)";
+    $mq-lg: "(min-width: 1200px)  and (max-width: 1359px)";
+    $mq-desk: "(min-width: 1360px) and (max-width: 1599px)";
+    $mq-desk-lg: "(min-width: 1600px) and (max-width: 1920px)";
+    $mq-max-desk-lg: "(max-width: 1600px)";
+    $mq-max-desk: "(max-width: 1366px)";
+    $mq-max-lg: "(max-width: 1199px)";
+    $mq-max-md: "(max-width: 1024px)";
+    $mq-max-sm: "(max-width: 800px)";
+    $mq-max-xs: "(max-width: 736px)";
+    $mq-min-xxs: "(min-width: 625px)";
+    $mq-min-xs: "(min-width: 768px)";
+    $mq-min-md: "(min-width: 992px)";
+    $mq-min-lg: "(min-width: 1200px)";
+
+    @if $breakpoint==xs {
+        @media #{$mq-xs} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==sm {
+        @media #{$mq-sm} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==md {
+        @media #{$mq-md} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==lg {
+        @media #{$mq-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==desk {
+        @media #{$mq-desk} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==desk-lg {
+        @media #{$mq-desk-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-desk-lg {
+        @media #{$mq-max-desk-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==mq-max-lg {
+        @media #{$mq-max-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-desk {
+        @media #{$mq-max-desk} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-lg {
+        @media #{$mq-max-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-md {
+        @media #{$mq-max-md} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-sm {
+        @media #{$mq-max-sm} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==max-xs {
+        @media #{$mq-max-xs} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==min-lg {
+        @media #{$mq-min-lg} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==min-md {
+        @media #{$mq-min-md} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==min-xs {
+        @media #{$mq-min-xs} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==min-xxs {
+        @media #{$mq-min-xxs} {
+            @content;
+        }
+    }
+}

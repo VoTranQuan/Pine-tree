@@ -1,0 +1,31 @@
+.top-header {
+    padding: 5px;
+    background: $secondary-bg-color;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+
+    .between-panel {
+        display: block;
+        margin: auto 0;
+
+        color: $text-color;
+        font-size: 14px;
+    }
+
+    .right-panel {
+        display: block;
+        margin: auto 0;
+    }
+}
+
+.nav-header {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: $main-bg-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $text-color;
+}

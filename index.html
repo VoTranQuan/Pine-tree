@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/stocktools/gui.css">
+  <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css">
+
+  <link rel="stylesheet" href="dist/css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top-header">
+      <nav class="top-nav left-panel">
+        <a href="#!" class="navbar-brand ml-3">
+          <img src="dist/images/logo.png" alt="logo" height="50">
+        </a>
+      </nav>
+
+      <div class="between-panel">
+        <h5>Tin Vắn: <span id="breaking-news"></span></h5>
+      </div>
+
+      <div class="right-panel pr-1">
+        <ul class="q-menu">
+          <li class="dropdown">
+            <a href="#!"><span>
+                <img src="dist/images/vietnam.svg" alt="VN" width="24" height="24">
+              </span></a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#!">
+                  <span>
+                    <img src="dist/images/vietnam.svg" alt="vn" width="24" height="24">
+                  </span>
+                  Tiếng Việt
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <span>
+                    <img src="dist/images/uk.svg" alt="uk" width="24" height="24">
+                  </span>
+                  English
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="btn-bg-third mr-1"><a href="#!"><span><i class="fas fa-comments"></i></span> Phản hồi</a></li>
+          <li class="btn-bg-main"><a href="#!"><span><i class="fas fa-sign-in-alt"></i></span> Đăng nhập</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-header">
+      <ul class="nav-menu">
+        <li class="active">
+          <a href="#!">Bảng giá</a>
+        </li>
+        <li class="dropdown">
+          <a href="#!">Giao dịch cổ phiếu</a>
+          <ul class="sub-menu">
+            <li><a href="#!">Đặt Lệnh</a></li>
+            <li><a href="#!">Sổ Lệnh</a></li>
+            <li><a href="#!">Danh Mục</a></li>
+            <li><a href="#!">Xác Nhận Phiếu Lệnh</a></li>
+            <li><a href="#!">Đăng Ký Quyền Mua</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#!">Giao dịch tiền</a>
+          <ul class="sub-menu">
+            <li><a href="#!">Chuyển Tiền Trực Tuyến</a></li>
+            <li><a href="#!">Ứng trước tiền bán</a></li>
+            <li><a href="#!">Hỗ trợ lãi suất</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#!">Thông tin tài khoản</a>
+          <ul class="sub-menu">
+            <li><a href="#!">Tổng quan</a></li>
+            <li><a href="#!">Báo cáo tài sản</a></li>
+            <li><a href="#!">Báo cáo nợ</a></li>
+            <li><a href="#!">Sao kê trực tuyến</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#!">Công cụ phân tích</a>
+          <ul class="sub-menu">
+            <li><a href="#!">Biểu đồ kỹ thuật</a></li>
+            <li><a href="#!">Market watch</a></li>
+            <li><a href="#!">Đẳng cấp doanh nghiệp</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#!">Margin plus</a>
+          <ul class="sub-menu">
+            <li><a href="#!">Quản lý sức mua tplus</a></li>
+            <li><a href="#!">Quản lý nợ tplus</a></li>
+            <li><a href="#!">Quản lý hạn mức margin</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="mt-2">
+    <section class="chart-overview">
+      <div class="chart-box pl-1">
+        <div class="chart-data" id="container1" style="height: 300px; width: 300px"></div>
+        <div class="chart-desc-info mt-1">
+          <p>
+            <span class="text-price-open">VN-INDEX</span>
+            <span class="text-price-down"><i class="fas fa-arrow-down"></i> 852.74 (9.99 1.16%)</span>
+          </p>
+          <p>
+            <span class="text-normal">303,976,346 <span class="text-price-open">CP</span> 5,283.947 <span
+                class="text-price-open">Tỷ</span></span>
+          </p>
+          <p>
+            <span class="text-price-up"><i class="fas fa-arrow-up"></i> 124</span> <span
+              class="text-price-max">(8)</span><span class="text-price-open"><i class="fas fa-rectangle-landscape"></i>
+              68</span>
+            <span class="text-price-down"><i class="fas fa-arrow-up"></i>236</span><span
+              class="text-price-min">(13)</span> <span class="text-normal">Nghỉ trưa</span>
+          </p>
+        </div>
+      </div>
+      <div class="chart-box pl-1">
+        <div class="chart-data" id="container2" style="height: 300px; width: 300px"></div>
+        <div class="chart-desc-info mt-1">
+          <p>
+            <span class="text-price-open">HNX-INDEX</span>
+            <span class="text-price-up"><i class="fas fa-arrow-up"></i> 107.04 (1.30 1.23%)</span>
+          </p>
+          <p>
+            <span class="text-normal">71,371,310 <span class="text-price-open">CP</span> 764.052 <span
+                class="text-price-open">Tỷ</span></span>
+          </p>
+          <p>
+            <span class="text-price-up"><i class="fas fa-arrow-up"></i> 124</span> <span
+              class="text-price-max">(8)</span><span class="text-price-open"><i class="fas fa-rectangle-landscape"></i>
+              68</span>
+            <span class="text-price-down"><i class="fas fa-arrow-up"></i>236</span><span
+              class="text-price-min">(13)</span> <span class="text-normal">Nghỉ trưa</span>
+          </p>
+        </div>
+      </div>
+      <div class="chart-box pl-1">
+        <div class="chart-data" id="container3" style="height: 300px; width: 300px"></div>
+        <div class="chart-desc-info mt-1">
+          <p>
+            <span class="text-price-open">UPCOM</span>
+            <span class="text-price-down"><i class="fas fa-arrow-down"></i> 54.24 (0.07 0.13%)</span>
+          </p>
+          <p>
+            <span class="text-normal">24,535,637 <span class="text-price-open">CP</span> 281.715 <span
+                class="text-price-open">Tỷ</span></span>
+          </p>
+          <p>
+            <span class="text-price-up"><i class="fas fa-arrow-up"></i> 113</span> <span
+              class="text-price-max">(42)</span><span class="text-price-open"><i class="fas fa-rectangle-landscape"></i>
+              66</span>
+            <span class="text-price-down"><i class="fas fa-arrow-down"></i>111</span><span
+              class="text-price-min">(13)</span> <span class="text-normal">Đóng cửa</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="price-board">
+      <div class="q-navigation">
+        <div class="search-box">
+          <form action="">
+            <input type="search" placeholder="Nhập mã ck" />
+            <button type="submit" onclick="alert('test')">
+              <span><i class="fas fa-search-plus"></i></span>
+            </button>
+          </form>
+        </div>
+
+        <div class="nav-primary">
+          <ul class="menu">
+            <li class="active dropdown">
+              <a href="#!">Danh mục VN30</a>
+              <ul class="sub-menu">
+                <li>
+                  <div class="create-form">
+                    <form action="">
+                      <input type="text" placeholder="Tạo danh mục mới" />
+                      <button type="submit">
+                        <span><i class="fas fa-plus"></i></span>
+                      </button>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!">Hose</a>
+              <ul class="sub-menu">
+                <li><a href="#!">Hose</a></li>
+                <li><a href="#!">VN30</a></li>
+                <li><a href="#!">Giao dịch thỏa thuận</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!">HNX</a>
+              <ul class="sub-menu">
+                <li><a href="#!">HNX</a></li>
+                <li><a href="#!">HNX30</a></li>
+                <li><a href="#!">Giao dịch thỏa thuận</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!">UPCOM</a>
+              <ul class="sub-menu">
+                <li><a href="#!">Upcom</a></li>
+                <li><a href="#!">Giao dịch thỏa thuận</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!"><span>CP giá trị <i class="fas fa-star"></i></span></a>
+              <ul class="sub-menu">
+                <li><a href="#!">CP giá trị</a></li>
+                <li><a href="#!">CP sinh lời</a></li>
+                <li><a href="#!">CP tăng trưởng</a></li>
+                <li><a href="#!">CP ngành</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#!"><span><i class="fas fa-plus mr-1" aria-hidden="true"></i> Tạo
+                      bộ lọc</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!"><span>Phái sinh <i class="fas fa-chart-bar"></i></span></a>
+
+              <ul class="sub-menu">
+                <li><a href="#!">HĐTL chỉ số VN30</a></li>
+                <li><a href="#!">HĐTL TPCP</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#!">Chứng quyền</a>
+              <ul class="sub-menu">
+                <li><a href="#!">Chứng quyền toàn thị trường</a></li>
+                <li><a href="#!">Chứng quyền tại VN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-secondary">
+          <ul class="menu">
+            <li class="dropdown">
+              <a href="#!"><span><i class="fas fa-sort-alpha-down"></i></span></a>
+              <ul class="sub-menu">
+                <li><a href="#!">Mặc định</a></li>
+                <li><a href="#!">Giao dịch nhiều nhất (KL lớn)</a></li>
+                <li><a href="#!">Giao dịch lớn nhất (Giá trị GD)</a></li>
+                <li><a href="#!">Cổ phiếu được giá nhất</a></li>
+                <li><a href="#!">Cổ phiếu được giá nhất (%)</a></li>
+                <li><a href="#!">Cổ phiếu mất giá nhất</a></li>
+                <li><a href="#!">Cổ phiếu mất giá nhất (%)</a></li>
+                <li><a href="#!">Giao dịch không đổi</a></li>
+                <li><a href="#!">Top nước ngoài mua</a></li>
+                <li><a href="#!">Top nước ngoài bán</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <span><i class="fas fa-tv"></i></span>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#!"><span><i class="fas fa-tv"></i></span> Light (sáng)
+                  </a>
+                </li>
+                <li>
+                  <a href="#!"><span><i class="fas fa-tv"></i></span> Dark (tối)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <table class="q-table">
+        <colgroup>
+          <col class="col-symbol" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-vol" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="col-price" />
+          <col class="" />
+          <col class="" />
+          <col class="col-vol" />
+          <col class="col-vol" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th rowspan="2">Mã CK</th>
+            <th rowspan="2">TC</th>
+            <th rowspan="2">Trần</th>
+            <th rowspan="2">Sàn</th>
+            <th rowspan="2">Tổng KL</th>
+            <th colspan="6">Bên mua</th>
+            <th colspan="3">Khớp lệnh</th>
+            <th colspan="6">Bên bán</th>
+            <th colspan="3">Bên Giá</th>
+            <th colspan="2">Dư</th>
+            <th colspan="2">ĐTNN</th>
+          </tr>
+          <tr>
+            <th>Giá 3</th>
+            <th>KL 3</th>
+            <th>Giá 2</th>
+            <th>KL 2</th>
+            <th>Giá 1</th>
+            <th>KL 1</th>
+            <th>Giá</th>
+            <th>KL</th>
+            <th>+/-</th>
+            <th>Giá 1</th>
+            <th>KL 1</th>
+            <th>Giá 2</th>
+            <th>KL 2</th>
+            <th>Giá 3</th>
+            <th>KL 3</th>
+            <th>Cao</th>
+            <th>TB</th>
+            <th>Thấp</th>
+            <th>Mua</th>
+            <th>Bán</th>
+            <th>Mua</th>
+            <th>Bán</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="has-tooltip" data-tooltip="Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ">
+              <span class="text-price-down font-weight-bold text-transform-uppercase font-size-14">BID</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-open">39.70</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-max">42.45</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-min">36.95</span>
+            </td>
+            <td class="text-right">
+              <span class="text-normal">1,140,83</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.20</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">11,54</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.25</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">22</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">50,44</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">57,52</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">-0.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.40</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">31</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.45</span>
+            </td>
+            <td class="text-right"><span class="text-price-down">5</span></td>
+            <td class="text-right">
+              <span class="text-price-down">39.50</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">15,34</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">40.00</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-up">39.72</span>
+            </td>
+            <td class="text-right">
+              <span class="text-price-down">39.30</span>
+            </td>
+            <td class="text-right"></td>
+            <td class="text-right"></td>
+            <td class="text-right"><span class="text-normal">2,02</span></td>
+            <td class="text-right">
+              <span class="text-price-down">41,99</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <span>
+      Copyright ©2020 All rights reserved | This website is a demo version made with <i class="fas fa-heart"></i>
+      by <a href="https://quansolid.blogspot.com/" target="_blank">Võ Trần Quân</a>
+    </span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js"></script>
+
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+  <script src="dist/js/highchart.js"></script>
+  <script src="dist/js/index.js"></script>
+</body>
+
+</html>
